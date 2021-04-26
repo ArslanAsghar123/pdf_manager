@@ -1,0 +1,18 @@
+include: package:pedantic/analysis_options.1.9.0.yaml
+
+analyzer:
+  exclude:
+    - lib/app_level/generated/**
+    - lib/app_level/models/**/*.g.dart
+
+  errors:
+    missing_required_param: error
+    missing_return: error
+    must_be_immutable: error
+    undefined_prefixed_name: ignore
+#   strong-mode:
+#     implicit-casts: false
+
+linter:
+  rules:
+    - camel_case_types
